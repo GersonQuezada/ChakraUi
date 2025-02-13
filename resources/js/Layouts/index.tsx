@@ -35,27 +35,26 @@ export default function DashboardLayouts ({ user, children }: DashboardProps) {
                     <MobileNav onOpen={onOpen} isOpen={isOpen} onToggle={onToggle} user={user} color={"#eceef1"} /> 
                 </GridItem>
                 <GridItem  
-                    bgGradient= "linear(to-b, #685aaa , #564997 ) "  
+                    bgGradient= "linear(to-b, #685aaa , #564997 )"  
                     minHeight={'max-content'}  overflow={'auto'} width={isOpen ? 250 : 'max-content'} area={'nav'} display={{ base: 'none', md: 'block' }}>
                     <SidebarContent  color="#FFFF" onClose={onClose} isOpen={isOpen} />
                 </GridItem>
-                <GridItem pl='2' bg="#eceef1" h={'100vh'} area={'main'}>
+                <GridItem pl='2' bg="#eceef1" h="calc(100vh - max-content - max-content)"  overflow={"auto"}  width='100%' area={'main'}>
                     {children}
                 </GridItem>
-                <GridItem pl='2' bg='#eceef1' display="flex" justifyContent={'center'} area={'footer'}>
-                    Footer
+                <GridItem pl='2' bg='#black'  justifyContent={'center'}  display="flex" area={'footer'}>
+                    ©Todos los derechos reservados - Credimujer(MMR)
                 </GridItem>
             </Grid>
-            ({isMobile &&
+            {isMobile &&
             <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
                 <DrawerContent overflow={'auto'}>
                     <SidebarContent isOpen={isOpen} color='#111827' onClose={onClose} />
                 </DrawerContent>
                 </Drawer>
-            })
+            }
 
         
         </ChakraProvider>
     );
 }
- 

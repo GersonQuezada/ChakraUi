@@ -9,7 +9,7 @@ export default function Dashboard({ auth }: PageProps) {
     return (
         <DashboardLayouts  user={auth.user}>       
             <Head title='Dashboard'/>
-            <Grid templateColumns='repeat(1, 2fr)' p={10} gap={6}>
+            <Grid templateColumns='repeat(2, 2fr)' p={10} gap={6}>
                 <GridItem w='100%' bg='transparent'>
                 <Stat>
                     <StatLabel>Elementos de Baja</StatLabel>
@@ -21,6 +21,40 @@ export default function Dashboard({ auth }: PageProps) {
                 </Stat>
                 </GridItem>
                 <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' />
+                <GridItem w='100%' h='10' bg='blue.500' /><GridItem w='100%' h='10' bg='blue.500' />
                 <GridItem w='100%' h='10' bg='blue.500' />
                 <GridItem w='100%' h='10' bg='blue.500' />
                 <GridItem w='100%' h='10' bg='blue.500' />

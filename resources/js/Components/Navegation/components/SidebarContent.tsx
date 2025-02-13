@@ -30,14 +30,18 @@ const SidebarContent = ({ onClose,color,isOpen, ...rest }:SidebarProps ) => {
             <NavItem
                 key={link.name}
                 icon={link.icon}
+                url={link.url} 
+                isOpen={isOpen}
                 fontSize={14}
                 _hover={{ bg: "#b34de6" }}
                 color={color}   
+                
             >
-                {isOpen && 
-                <Box alignItems="center">                        
-                    <Text  ml="1" >{link.name}</Text> 
-                </Box>
+                {isOpen && (
+                    <Box alignItems="center">                        
+                        <Text  ml="1" >{link.name}</Text> 
+                    </Box>
+                )
                 }
             </NavItem>
 
